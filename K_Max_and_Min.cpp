@@ -1,0 +1,42 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a, b, c;
+    cin >> a >> b >> c;
+
+    int max = 0;
+    
+
+    if (a >= b && a >= c)
+    {
+        max = a;
+    }
+    else if (b >= a && b >= c)
+    {
+        max = b;
+    }
+    else
+    {
+        max = c;
+    }
+
+
+    int min = 0;
+
+    if (a <= b && a <= c)
+    {
+        min = a;
+    }
+    else if (b <= a && b <= c)
+    {
+        min = b;
+    }
+    else
+    {
+        min = c;
+    }
+
+    cout << min << " " << max << endl;
+    return 0;
+}
